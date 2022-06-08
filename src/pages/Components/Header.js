@@ -20,7 +20,7 @@ const Header = () => {
 
 
     return (
-        <Navbar bg="white" expand="lg" className='mainNav'>
+        <Navbar bg="white" expand="sm" className='mainNav'>
             <Container>
                 <Navbar.Brand href="#">
                     <h3 className='primary_color fw-bold'> ATools<span className='secondary_color'>.</span> </h3>
