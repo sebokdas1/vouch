@@ -3,7 +3,7 @@ import { Col, Container, Row, Form } from 'react-bootstrap';
 import Header from '../Components/Header';
 import Swal from 'sweetalert2'
 
-import bg from '../../images/bg.png'
+import bg from '../../images/bg1.png'
 import axios from 'axios';
 
 const Login = ({ loading, setLoading }) => {
@@ -82,7 +82,7 @@ const Login = ({ loading, setLoading }) => {
                             </small>
                         </form>
                     </Col>
-                    <Col lg="8" md='6' className='primary_bg d-none d-md-block'>
+                    <Col lg="8" md='6' className='primary_bg d-none login_right d-md-block'>
                         <img src={bg} alt="background" />
                     </Col>
                 </Row>
