@@ -3,10 +3,9 @@ import { Col, Container, Row, Form } from 'react-bootstrap';
 import Header from '../Components/Header';
 import Swal from 'sweetalert2'
 
-import bg from '../../images/bg1.png'
 import axios from 'axios';
 
-const Login = ({ loading, setLoading }) => {
+const Login = ({ setLoading }) => {
 
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -76,15 +75,17 @@ const Login = ({ loading, setLoading }) => {
                                     className='my-0'
                                     label='Remember Password'
                                     checked={remember}
-                                    onClick={()=>setRemember(!remember)}
+                                    onClick={() => setRemember(!remember)}
                                 />
                                 <a href="#" classNainme='primary_color'> Forgot password? </a>
                             </small>
                         </form>
                     </Col>
-                    <Col lg="8" md='6' className='primary_bg d-none login_right d-md-block'>
-                        <img src={bg} alt="background" />
+
+                    <Col lg="8" md='6' className='primary_bg login_right'>
+                        <img src="https://www.phitron.io/static/media/login.60b00691.png" alt="background" />
                     </Col>
+
                 </Row>
             </Container>
 
